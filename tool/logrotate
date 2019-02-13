@@ -1,0 +1,20 @@
+/var/log/nginx/jarvis.recipes-body.info/*.log {
+	daily
+	missingok
+	rotate 60
+	#compress
+	#delaycompress
+	notifempty
+	create 0640 root root
+	dateext
+	sharedscripts
+	prerotate
+		if [ -d /etc/logrotate.d/httpd-prerotate ]; then \
+			run-parts /etc/logrotate.d/httpd-prerotate; \
+		fi \
+	endscript
+	postrotate
+		[ ! -f /usr/local/nginx/logs/nginx.pid ] || kill -USR1 `/usr/local/nginx/logs/nginx.pid`; \
+		[ ! -f /var/run/nginx.pid ] || kill -USR1 `cat /var/run/nginx.pid`; \
+	endscript
+}

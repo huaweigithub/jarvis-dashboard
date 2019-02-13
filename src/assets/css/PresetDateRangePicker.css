@@ -1,0 +1,91 @@
+.App .DateInput_input {
+  width: 78%;
+}
+
+.PresetDateRangePicker_1fnf6cw {
+  padding: 0px 22px 11px !important;
+}
+/* .row .DateRangePicker{
+  margin: 1.25rem 0 1.25rem 1.25rem;
+} */
+
+.datePicker-main{
+  position: absolute;
+  top: 16px;
+  left: 23%;
+}
+.DateRangePicker .DateRangePickerInput{
+  border: 1px solid #EBEDF2;
+  border-radius: 0 2px 2px 0;
+}
+.datePicker-main .DateRangePickerInput__withBorder{
+  border: 1px solid #EBEDF2;
+  border-right: none;
+}
+.datePicker-main .DateInput_input{
+  border-bottom: none;
+}
+.row .DateInput{
+  width: 100px;
+}
+.DateRangePickerInput_arrow{
+  line-height: 1px;
+}
+.row .DateRangePickerInput_arrow_svg{
+  vertical-align: initial;
+  height: 18px;
+  width: 18px;
+
+}
+.row .DateInput_input{
+  padding: 6px 12px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: none;
+}
+.DateRangePicker_picker .CalendarDay__selected, .CalendarDay__selected:active, .CalendarDay__selected:hover {
+  background: rgb(9, 49, 112);
+  border: 1px double rgb(9, 49, 112);
+  color: #fff;
+}
+.DateRangePicker_picker .CalendarDay__default:hover {
+  background: rgba(9, 49, 112, 0.3);
+  border: 1px solid #e4e7e7;
+  color: inherit;
+}
+
+.PresetDateRangePicker_btn {
+  font-size: 12px;
+  position: relative !important;
+  height: 100% !important;
+  text-align: center !important;
+  color: rgb(9, 49, 112) !important;
+  margin-right: 8px !important;
+  box-sizing: border-box !important;
+  cursor: pointer !important;
+  background: none !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: rgb(9, 49, 112) !important;
+  border-image: initial !important;
+  padding: 4px 10px !important;
+  font: inherit inherit inherit inherit inherit inherit inherit inherit !important;
+  overflow: visible !important;
+}
+
+.PresetDateRangePicker_btn:hover {
+  position: relative !important;
+  height: 100% !important;
+  text-align: center !important;
+  margin-right: 8px !important;
+  box-sizing: border-box !important;
+  cursor: pointer !important;
+  color: rgb(255, 255, 255) !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: rgb(9, 49, 112) !important;
+  border-image: initial !important;
+  font: inherit inherit inherit inherit inherit inherit inherit inherit !important;
+  overflow: visible !important;
+  background: rgb(9, 49, 112) !important;
+}
